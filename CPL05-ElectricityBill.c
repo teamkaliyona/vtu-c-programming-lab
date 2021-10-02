@@ -13,18 +13,18 @@
 int main()
 {
 
-char name[10];
-int unit;
-float billAmount;
+  char name[10];
+  int unit;
+  float billAmount;
 
-printf("Enter the customer name: \n");
-scanf("%s",&name);
-printf("Enter the total units consumed:\n");
-scanf("%d", &unit);
+  printf("Enter the customer name: \n");
+  scanf("%s",name);
+  printf("Enter the total units consumed:\n");
+  scanf("%d", &unit);
 
-billAmount = 100;
+  billAmount = 100;
 
-if(unit<=200) {
+  if(unit<=200) {
 billAmount= billAmount+(unit*.80);
 }
 else if(unit>200 && unit<=300){
